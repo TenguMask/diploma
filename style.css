@@ -29,7 +29,7 @@ body {
 
 .flex-item {
 /*    /background-color: aquamarine;*/
-    height: 350px;
+    height: 470px;
     min-width: 350px;
     width: 30%;
     margin: auto;
@@ -46,4 +46,44 @@ body {
     //max-width: 300px;
 
     margin: auto;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.gallery-container{
+    width: 800px;
+    border: 1px solid red;
+}
+
+.gallery-menu{
+    width: 100px;
+    float: left;
+
+}
+
+.gallery-menu img{
+    margin-top: 20px;
+    opacity: 0.6;
+}
+
+.gallery-menu img:hover{
+    margin-top: 20px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.gallery-main{
+    width: 700px;
+    float: left;
+}
+
+.gallery-main img{
+    width: 700px;
+}
+
+#g1{
+    width: 100px;
 }

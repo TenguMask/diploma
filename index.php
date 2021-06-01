@@ -22,22 +22,22 @@ SELECT items.id,
 FROM   items
        INNER JOIN pics
                ON items.id = pics.items_id"); ?>
-
     <div class="flex-container">
         <?php foreach ($query as $a){ echo "
+
      <div class='flex-item'>
+      <a href='filler?id=".$a[ 'id']. "'>
             <span id='item-name'> ". $a[ 'name'] . " </span>
             <br>
-            <img src='" .$a['pic1']."'>
+            <img src='" .$a[ 'pic1']. "'>
             <br>
             <span id='item-price'> ". $a[ 'price'] . " </span>
             <br>
             <span id='item-type'> ". $a[ 'type'] . "</span>
             <br>
             <span id='item-type'> ". $a[ 'size'] . "</span>
-        </div>
+      </a>  </div>
     ";} ?>
-
         <!--
         <div class="flex-item">
             <span id="item-name"> name </span>
@@ -49,11 +49,7 @@ FROM   items
             <span id="item-type"> shirt </span>
         </div>
 -->
-
-<!--        <div class="flex-item"> </div>-->
-
-    </div>
-
+        <!--        <div class="flex-item"> </div>--></div>
 </body>
 
 </html>
